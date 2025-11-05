@@ -4,6 +4,7 @@ import AboutMe from"./AboutMe"
 import {Routes, Route, Link} from 'react-router-dom';
 import React from "react";
 import ReactPlayer from "react-player";
+import Cars from './Cars';
 
 
 function App() {
@@ -14,14 +15,16 @@ function App() {
         <Link to="/about-me" className='nav-item'>About Me</Link>
       </nav>
       <h1>React Player Video</h1>
-      <div className='App'>
-        <ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-        controls={true} 
-        playing={true}
-        muted={true}
-        width="640px"
-        height="360px"
+      <Cars color="red" brand="Ford"
       />
+      <div className='App'>
+          <ReactPlayer url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+          controls={true} 
+          playing={true}
+          muted={true}
+          width="640px"
+          height="360px"
+        />
       </div>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -30,6 +33,4 @@ function App() {
     </div>
   );
 }
-
-
 export default App;
