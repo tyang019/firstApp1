@@ -2,19 +2,24 @@
   text-align: center;
 }
 .nav-bar{
-  background-color: rgb(82, 183, 255);
-  
+  background-color: rgb(208, 96, 76);
   text-align: start;
   display: flex;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1.5rem;
 }
 .nav-item{
-  color: black;
-  background-color: rgb(112, 249, 112);
+  color: white;
+  background-color:  rgb(46, 57, 64);
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 0.5rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+.nav-item:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 500ms;
 }
 .App-logo {
   height: 40vmin;
